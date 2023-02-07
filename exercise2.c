@@ -10,10 +10,12 @@ int main()
     if (a>b)
     {
         printf("a è maggiore di b\n");
+        printf("b è minore di a \n");
     }
     else if (a<b)
     {
         printf("a è minore di b\n");
+        printf("b è maggiore di a\n");
     }
     else if (a==b)
     {
