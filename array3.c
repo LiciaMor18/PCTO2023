@@ -5,26 +5,46 @@
 
 int main()
 {
+    int i = 0; //
     int array [5];
     
     
-
-    printf (" inserisci un numero: %d\n");
-    scanf ("%d" , &array );
-
+    //riempilo di numero
     while ( i <= 4)
     {
         
+        scanf ("%d" , &array [i]);
         i = i + 1;
-        x = x + 2;
-
     }
-    i = 4 ;
+    
+     //resetto l'array
+    i = 0;
+    // stampare l'array
 
-    while ( i >= 0)
+    while ( i <= 4)
+    {
+        printf ("%d\n",array [i] );
+        i = i + 1;
+    }
+    i = 0;
+
+    // variabile temporanea
+    int temp;
+    while ( i < 2)
+    {
+        temp = array [i];
+         array[i] = array [4 - i];
+        array [ 4 - i] = temp;
+        i = i + 1;
+    } 
+    i = 0 ;
+
+    //stampo array 
+    while ( i <= 4)
     {
         printf ("%d\n", array[i]); 
-        i = i - 1;
+        i = i + 1;
     }
+
 }
 
